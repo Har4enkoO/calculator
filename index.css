@@ -1,3 +1,33 @@
+h1,
 body {
-  margin: auto;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 30px;
+}
+.calculator {
+  background-color: aquamarine;
+  border: 2px solid black;
+  margin: 0;
+  width: 177px;
+}
+.control-panel {
+  margin-top: 5px;
+}
+.digits,
+.operations {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 5px 0;
+  flex-wrap: wrap;
+}
+.eq {
+  width: 100%;
+  margin-top: 5px;
 }
