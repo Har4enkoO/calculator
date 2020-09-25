@@ -6,13 +6,7 @@ document
   .forEach((button) => button.addEventListener('click', digitPressed));
 function digitPressed(ev) {
   const digit = ev.target.innerText;
-  if (
-    memory &&
-    display.value.slice(-1) != '*' &&
-    display.value.slice(-1) != '/' &&
-    display.value.slice(-1) != '+' &&
-    display.value.slice(-1) != '-'
-  ) {
+  if (memory && +display.value === memory) {
     memory = '';
     display.value = '';
   }
